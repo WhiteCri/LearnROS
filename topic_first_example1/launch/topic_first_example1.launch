@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="topic_first_example1" type="simple_pub" name="simple_pub" output="screen">
+    </node>
+</launch>

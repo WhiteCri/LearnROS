@@ -9,7 +9,9 @@ int main(int argc, char *argv[]){
     std_msgs::Int32 msg;
     msg.data = 1;
     
-    ros::Rate loop_rate(10);
+    int frequency;
+    nh.param("/frequency", frequency, 10);
+    ros::Rate loop_rate(frequency);
 
     while(true){
         pub.publish(msg);

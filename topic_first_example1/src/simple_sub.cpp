@@ -1,5 +1,6 @@
 #include <ros/ros.h>
 #include <std_msgs/Int32.h>
+double dist;
 
 void subCB(const std_msgs::Int32ConstPtr& ptr){
     ROS_INFO("got : %d", ptr->data);
